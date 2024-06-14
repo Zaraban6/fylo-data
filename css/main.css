@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: hsl(229, 57%, 11%);
+  color: hsl(243, 100%, 93%);
+  position: relative;
+  font-family: "Raleway", "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.background {
+  width: 1400px;
+  height: 420px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.container {
+  width: 1400px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Dashboard {
+  width: 921px;
+  height: 229px;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+}
+
+.upload {
+  border-radius: 10px 100px 10px 10px;
+  width: 351px;
+  height: 201px;
+  background-color: hsl(228, 56%, 26%);
+  padding: 40px 0 0 40px;
+}
+
+.icon-m {
+  width: 172px;
+  padding: 30px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 10px;
+  padding: 13px;
+}
+
+.details {
+  border-radius: 10px;
+  margin: 46px 0px 0px 30px;
+  width: 540px;
+  height: 155px;
+  background-color: hsl(228, 56%, 26%);
+  margin-bottom: 10px;
+  padding: 2.5rem;
+}
+
+.bar {
+  width: 459px;
+}
+
+.p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.progress {
+  margin: 20px 0 10px 0;
+  padding-left: 3px;
+  width: 100%;
+  height: 20px;
+  background-color: #151E47;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 40px;
+}
+
+.progress-bar {
+  width: 0;
+  height: 14px;
+  border-radius: 40px;
+  background: linear-gradient(to right, #FEA098, #FB4D92);
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  position: relative;
+  animation: slideIn 2s forwards 0.8s;
+  animation-fill-mode: backwards;
+}
+
+.circle {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: hsl(243, 100%, 93%);
+  position: absolute;
+  top: 1px;
+  right: 1.5px;
+}
+
+.free-space {
+  width: 180px;
+  position: absolute;
+  transform: translateX(50%);
+  max-width: 80%;
+  animation: fadeTwo 2s ease;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+}
+.free-space p {
+  padding: 0.8rem 2rem;
+  color: hsl(229, 7%, 55%);
+  background-color: white;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.7rem;
+  white-space: nowrap;
+}
+
+@keyframes slideIn {
+  0% {
+    width: 5%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+.large-font {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+  font-weight: 700;
+  color: hsl(229, 57%, 11%);
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.free-space::after {
+  content: "";
+  position: absolute;
+  top: 46px;
+  right: 0;
+  border-right: 25px solid white;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+}
+
+.free-space {
+  position: absolute;
+  right: 2.5rem;
+  top: 0;
+  transform: translateX(0);
+  border-radius: 10px 10px 0 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeTwo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=main.css.map */
